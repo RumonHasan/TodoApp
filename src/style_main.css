@@ -1,0 +1,19 @@
+html{
+    overflow:hidden;
+    height: 100%;
+    width: 100%;
+    scroll-behavior: smooth;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)),
+    url("./component/Assets/images/light.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    z-index: -1;
+}
