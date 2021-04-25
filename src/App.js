@@ -1,10 +1,13 @@
 import React from 'react'
 
+// components
+import Navbar from './component/Navbar';
+
 const App = () => {
     return (
-        <div>
-            <p>Todo List APp</p>
-        </div>
+        <main>
+            <Navbar/>
+        </main>
     )
 }
 
