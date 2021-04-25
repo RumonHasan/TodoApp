@@ -1,13 +1,20 @@
 import React from 'react'
 
 // components
-import Navbar from './component/Navbar';
+import Navbar from './component/Navbar/Navbar';
+import SignInModal from './component/SignUp/SignInModal';
+
+// global provider 
+import { GlobalProvider } from './context/mainContext';
 
 const App = () => {
     return (
-        <main>
-            <Navbar/>
-        </main>
+        <GlobalProvider>
+            <main>
+                <Navbar/>
+                <SignInModal/>
+            </main>
+        </GlobalProvider>
     )
 }
 

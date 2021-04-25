@@ -41,7 +41,7 @@ loader: require.resolve("babel-loader"),
 },
 {
 test: /\.css$/,
-use: ["style-loader", "css-loader", "sass-loader"],
+use: ["style-loader", "css-loader"],
 },
 {
 test: /\.png|svg|jpg|gif$/,
