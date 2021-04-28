@@ -20,14 +20,16 @@ const SignInModal = () => {
 
     return (
     <section className={`${signState ? 'sign-section show': 'sign-section'}`} onClick={closeSignHandler}>
-        <div className='sign-modal'>
-            <div className='sign-headers'>
-                <button className='signclose-btn' type='submit' onClick={closeSign}><FaTimes/></button>
+        <div className='sign-wrapper'>
+                <div className= 'sign-headers'>
+                    <p className = 'sign-title'>Todotastic</p>
+                    <button className='close-btn' type='submit' onClick={closeSign}><FaTimes/></button>   
+                </div>
+
+                <form onSubmit={handleSubmit}>
+                    <button className='signin-btn' type='submit'><FaSignInAlt/>Sign In</button>
+                </form>
             </div>
-            <form onSubmit={handleSubmit}>
-                <button className='signin-btn'><FaSignInAlt className='signin-icon'/>Sign In</button>
-            </form>
-        </div>
     </section>
     )
 }

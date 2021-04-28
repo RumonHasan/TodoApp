@@ -13,7 +13,7 @@ export const GlobalProvider = ({children}) =>{
     // reducer
     const[state, dispatch] = useReducer(reducer, initialState);
 
-    // functions
+    // State Control Functions
 
     // show sign in form
     const showSign = ()=>{
