@@ -1,10 +1,12 @@
 import React, {useEffect, useState, useContext, useReducer, createContext} from 'react';
 import reducer from './reducer'; // main reducer
 import { menuItem } from './menuItem';
+import { todoItems } from './todoItems';
 
 export const GlobalContext = createContext();
 
 const initialState = {
+    todoItems: todoItems,
     menu: menuItem,
     signState: false,
 }
