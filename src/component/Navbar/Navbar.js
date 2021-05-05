@@ -5,7 +5,7 @@ import useInterval from '../../context/useInterval';
 import {FaArrowUp, FaArrowDown} from 'react-icons/fa';
 
 const Navbar = () => {
-    const { menu, showSign } = useGlobalContext();
+    const { menu, showSign, showTodoBox } = useGlobalContext();
 
     // retractable menu control
     const [arrow, setArrow] = useState(false);
@@ -26,6 +26,7 @@ const Navbar = () => {
     });
     
     return (
+    
         <section className = 'navbar-container' ref={navContainRef}>
             <div className='navbar-section' ref={navbarRef}>
 
@@ -43,6 +44,9 @@ const Navbar = () => {
                         const handleClick = ()=>{
                             if(label === 'Sign In'){
                                 showSign();
+                            }
+                            if(label === 'Add Todo'){
+                                showTodoBox();
                             }
                         }
                         return(

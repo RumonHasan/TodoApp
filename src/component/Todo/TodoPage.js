@@ -1,22 +1,26 @@
 import React from 'react'
 import { useGlobalContext } from '../../context/mainContext';
 import TodoItem from '../TodoItem/TodoItem';
+import style from './style.css';
 
 const TodoPage = () => {
-    const { todoItems } = useGlobalContext();
+    const {  todoItem } = useGlobalContext();
+
     return (
-        <div className='container'>
+        <section className='todo-container'>
             <div className='row justify-content-center '>
                 <div className='col-6'>
-                    {todoItems.map(item => (
-                        <div className='row mt-2'>
-                            <TodoItem item={item} />
-                        </div>
-                    ))}
+                    {todoItem.map((item, index)=>{
+                        return(
+                            <div className='row mt-2' key={index}>
+                                <TodoItem {...item}/>
+                            </div>
+                        )
+                    })}
                 </div>
             </div>
-        </div>
-    )
+        </section>
+    );
 }
 
 export default TodoPage;

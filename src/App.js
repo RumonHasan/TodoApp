@@ -3,7 +3,8 @@ import React from 'react'
 // components
 import Navbar from './component/Navbar/Navbar';
 import SignInModal from './component/SignUp/SignInModal';
-import TodoSidebar from './component/Todo/TodoSidebar';
+import TodoPage from './component/Todo/TodoPage';
+import AddTodo from './component/Todo/AddTodo';
 
 // style
 import style_main from './style_main.css';
@@ -17,7 +18,8 @@ const App = () => {
             <main>
                 <Navbar/>
                 <SignInModal/>
-                <TodoSidebar/>
+                <TodoPage/>
+                <AddTodo/>
             </main>
         </GlobalProvider>
     )

@@ -1,0 +1,47 @@
+.addtodo-wrapper{
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: grid;
+    place-items: center;
+    visibility: hidden;
+    transform: scale(0);
+    transition: 0.3s ease-in-out;
+}
+
+.addtodo-wrapper.show{
+    visibility: visible;
+    transform:scale(1);
+}
+
+.addtodo-container{
+    width: 100%;
+    background: var(--menuBg);
+    padding: 10px;
+    box-shadow: 6px 6px 14px 0 rgba(0, 0, 0, 0.2),
+    -8px -8px 18px 0 rgba(120, 120, 120, 0.55);
+    max-width: 1170px;
+    border-bottom-right-radius: 30px ;
+    border-bottom-left-radius: 30px;
+    width: 500px;
+    height: 450px;
+    border-radius: 10px;
+}
+
+/*  add todo headers */
+.addtodo-headers{
+    display: flex;
+    justify-content: space-between;
+}
+
+/*form designs*/
+form{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 90px;
+    align-items: center;
+}
